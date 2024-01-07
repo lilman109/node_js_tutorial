@@ -1,0 +1,9 @@
+{
+  "name": "planets-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^5.5.3"
+  }
+}

@@ -37,7 +37,6 @@ app.get("/", (req, res) => {
   });
 });
 
-
 // site
 app.use("/site", express.static(path.join(__dirname, "public")));
 
@@ -45,10 +44,6 @@ app.use("/site", express.static(path.join(__dirname, "public")));
 app.use("/messages", messagesRouter);
 
 // friends
-friendsRouter.use((req, res, next) => {
-  console.log("ip address: ", req.ip);
-  next();
-});
 app.use("/friends", friendsRouter);
 
 app.listen(PORT, () => {
